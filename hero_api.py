@@ -10,7 +10,6 @@ def api_data():
     response.raise_for_status()
     return response.json()
 
-
 def heroes(gender, has_job):
     """Возвращает героя с максимальным ростом"""
     heroes_info = api_data()
